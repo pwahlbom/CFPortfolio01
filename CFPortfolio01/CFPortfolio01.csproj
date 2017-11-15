@@ -9,7 +9,7 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{69EE6496-6682-4ED2-BE64-2C9D12EEBA76}</ProjectGuid>
+    <ProjectGuid>{18FD2566-9CC6-4619-AFF9-29D72E381516}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
@@ -149,60 +149,17 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="contactform\contactform.js" />
-    <Content Include="contactform\contactform.php" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
-    <Content Include="css\animate.css" />
-    <Content Include="css\animate.min.css" />
-    <Content Include="css\bootstrap-theme.css" />
-    <Content Include="css\bootstrap-theme.min.css" />
-    <Content Include="css\bootstrap.css" />
-    <Content Include="css\bootstrap.min.css" />
-    <Content Include="css\font-awesome.css" />
-    <Content Include="css\font-awesome.min.css" />
-    <Content Include="css\style.css" />
     <Content Include="favicon.ico" />
-    <Content Include="fonts\fontawesome-webfont.svg" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
-    <Content Include="img\1.jpg" />
-    <Content Include="img\10.jpg" />
-    <Content Include="img\11.jpg" />
-    <Content Include="img\12.jpg" />
-    <Content Include="img\13.jpg" />
-    <Content Include="img\7.jpg" />
-    <Content Include="img\8.jpg" />
-    <Content Include="img\9.jpg" />
-    <Content Include="img\gallery1.png" />
-    <Content Include="img\gallery2.png" />
-    <Content Include="img\gallery3.png" />
-    <Content Include="img\gallery4.png" />
-    <Content Include="img\gallery5.png" />
-    <Content Include="img\gallery6.png" />
-    <Content Include="img\man1.jpg" />
-    <Content Include="img\man2.jpg" />
-    <Content Include="img\man3.jpg" />
-    <Content Include="img\man4.jpg" />
-    <Content Include="img\slide.jpg" />
-    <Content Include="js\bootstrap.js" />
-    <Content Include="js\bootstrap.min.js" />
-    <Content Include="js\jquery.js" />
-    <Content Include="js\wow.min.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="css\bootstrap-theme.css.map" />
-    <Content Include="css\bootstrap.css.map" />
-    <Content Include="fonts\fontawesome-webfont.eot" />
-    <Content Include="fonts\fontawesome-webfont.ttf" />
-    <Content Include="fonts\fontawesome-webfont.woff" />
-    <Content Include="fonts\FontAwesome.otf" />
-    <None Include="Properties\PublishProfiles\pWahlbom-portfolio - FTP.pubxml" />
-    <None Include="Properties\PublishProfiles\pWahlbom-portfolio - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -214,9 +171,6 @@
     <Content Include="Scripts\modernizr-2.6.2.js" />
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
-    <Content Include="Views\Home\contact.html" />
-    <Content Include="Views\Home\gallery.html" />
-    <Content Include="Views\Home\services.html" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -265,7 +219,7 @@
         <WebProjectProperties>
           <UseIIS>True</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>5769</DevelopmentServerPort>
+          <DevelopmentServerPort>18550</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
           <IISUrl>http://localhost:5769/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
