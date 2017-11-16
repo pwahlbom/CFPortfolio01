@@ -8,6 +8,11 @@ namespace CFPortfolio01.Controllers
 {
     public class HomeController : Controller
     {
+        public ActionResult Test()
+        {
+            return View();
+        }
+
         public ActionResult Start()
         {
             ViewBag.Title = "START";
@@ -22,10 +27,10 @@ namespace CFPortfolio01.Controllers
             return View();
         }
 
-        public ActionResult JSExercises()
+        public ActionResult Exercises()
         {
-            ViewBag.Title = "JSEXERCISES";
-            ViewBag.Message = "Your JSExercises page.";
+            ViewBag.Title = "Exercises";
+            ViewBag.Message = "Your Exercises page.";
             return View();
         }
 

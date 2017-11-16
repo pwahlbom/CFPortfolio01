@@ -17,7 +17,7 @@ body {
 	font-size:14px;
 	font-weight:300;
 	line-height:1.6em;
-	color:#fff;
+	color:black;
 	background-color:#fff;
 	overflow-x:hidden;
 }
@@ -121,8 +121,8 @@ a:hover {
 
 .nav-tabs > li > a {	
 	border-radius:0;
-	color:#fff;
-	padding:30px;
+	/*color:#fff;
+	padding:30px;*/
 }
 
 .nav-tabs > li > a:hover {

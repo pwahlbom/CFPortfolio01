@@ -2,17 +2,25 @@
 <html>
 
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <title>@ViewBag.Title - Philip's Portfolio</title>
-    @Styles.Render("~/Content/css")
-    @Scripts.Render("~/bundles/modernizr")
+
+    <!-- Bootstrap -->
+    <link href="~/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="~/css/font-awesome.min.css">
+    <link rel="stylesheet" href="~/css/animate.css">
+    <link href="~/css/animate.min.css" rel="stylesheet">
+    <link href="~/css/style.css" rel="stylesheet" />
+
+    <link href="~/css/main.css" rel="stylesheet" />
 </head>
 
 <body>
 
     <!-- BEGIN HEADER ---------------------------------------------->
-    <hr />
     <header id="header">
         <nav class="navbar navbar-default navbar-static-top" role="banner">
             <div class="container">
@@ -24,7 +32,7 @@
                         <span class="icon-bar"></span>
                     </button>
                     <div class="navbar-brand">
-                        @Html.ActionLink("PCW3.0", "Start", "Home")
+                        <h1>@Html.ActionLink("PCW3.0", "Start", "Home")</h1>
                     </div>
                 </div>
                 <div class="navbar-collapse collapse">
@@ -32,10 +40,8 @@
                         <ul class="nav nav-tabs" role="tablist">
                             <li role="presentation">@Html.ActionLink("Home", "Start", "Home")</li>
                             <li role="presentation">@Html.ActionLink("About", "About", "Home")</li>
-                            <li role="presentation">@Html.ActionLink("JS Exercises", "JSExercises", "Home")</li>
+                            <li role="presentation">@Html.ActionLink("Exercises", "Exercises", "Home")</li>
                             <li role="presentation">@Html.ActionLink("Portfolio", "Portfolio", "Home")</li>
-                            <li role="presentation">@Html.ActionLink("Resume", "Resume", "Home")</li>
-                            <li role="presentation">@Html.ActionLink("Other", "Other", "Home")</li>
                             <li role="presentation">@Html.ActionLink("Contact", "Contact", "Home")</li>
                         </ul>
                     </div>
@@ -45,25 +51,28 @@
         </nav>
         <!--/nav-->
     </header>
-    <hr />
+
+    <div class="float">
+        <i class="my-float">@Html.ActionLink("Resume", "Resume", "Home")</i>
+    </div>
+
     <!-- END HEADER ------------------------------------------------>
     <!-- BEGIN VIEW ------------------------------------------------>
     <div class="container body-content">
         @RenderBody()
     </div>
-    <!-- END VIEW ------------------------------------------------>
+    <!-- END VIEW -------------------------------------------------->
     <!-- BEGIN FOOTER ---------------------------------------------->
-    <hr />
     <footer>
         <div class="container">
             <div class="col-md-4 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
-                <h4>About Us</h4>
+                <h4>About Me</h4>
                 <p>Day is tellus ac cursus commodo, mauesris condime ntum nibh, ut fermentum mas justo sitters.</p>
                 <div class="contact-info">
                     <ul>
-                        <li><i class="fa fa-home fa"></i>Suite 54 Elizebth Street, Victoria State Newyork, USA </li>
-                        <li><i class="fa fa-phone fa"></i> +38 000 129900</li>
-                        <li><i class="fa fa-envelope fa"></i> info@domain.net</li>
+                        <li><i class="fa fa-home fa"></i>261 Hightower Lake Trail, Ball Ground, GA 30107 USA</li>
+                        <li><i class="fa fa-phone fa"></i>+1 770.841.4119</li>
+                        <li><i class="fa fa-envelope fa"></i>philip@wahlbom.net</li>
                     </ul>
                 </div>
             </div>
@@ -72,12 +81,12 @@
                 <div class="text-center">
                     <h4>Photo Gallery</h4>
                     <ul class="sidebar-gallery">
-                        <li><a href="#"><img src="img/gallery1.png" alt="" /></a></li>
-                        <li><a href="#"><img src="img/gallery2.png" alt="" /></a></li>
-                        <li><a href="#"><img src="img/gallery3.png" alt="" /></a></li>
-                        <li><a href="#"><img src="img/gallery4.png" alt="" /></a></li>
-                        <li><a href="#"><img src="img/gallery5.png" alt="" /></a></li>
-                        <li><a href="#"><img src="img/gallery6.png" alt="" /></a></li>
+                        <li><a href="#"><img src="~/img/gallery1.png" alt="" /></a></li>
+                        <li><a href="#"><img src="~/img/gallery2.png" alt="" /></a></li>
+                        <li><a href="#"><img src="~/img/gallery3.png" alt="" /></a></li>
+                        <li><a href="#"><img src="~/img/gallery4.png" alt="" /></a></li>
+                        <li><a href="#"><img src="~/img/gallery5.png" alt="" /></a></li>
+                        <li><a href="#"><img src="~/img/gallery6.png" alt="" /></a></li>
                     </ul>
                 </div>
             </div>
@@ -92,17 +101,15 @@
                     <div class="btn-gamp">
                         <a type="submit" class="btn btn-default">Subscribe</a>
                     </div>
-
                 </div>
             </div>
-
         </div>
     </footer>
 
     <div class="sub-footer">
         <div class="container">
             <div class="social-icon">
-                <div class="col-md-4">
+                <div class="col-md-6">
                     <ul class="social-network">
                         <li><a href="#" class="fb tool-tip" title="Facebook"><i class="fa fa-facebook"></i></a></li>
                         <li><a href="#" class="twitter tool-tip" title="Twitter"><i class="fa fa-twitter"></i></a></li>
@@ -113,20 +120,28 @@
                 </div>
             </div>
 
-            <div class="col-md-4 col-md-offset-4">
+            <div class="col-md-6">
                 <div class="copyright">
-                    &copy; Day Theme. All Rights Reserved.
-
+                    &copy; Philip C. Wahlbom. All Rights Reserved.
                 </div>
             </div>
         </div>
     </div>
-    <hr />
     <!-- END FOOTER ------------------------------------------------>
 
-    @Scripts.Render("~/bundles/jquery")
-    @Scripts.Render("~/bundles/bootstrap")
-    @RenderSection("scripts", required: false)
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="~/js/jquery.js"></script>
 
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="~/js/bootstrap.min.js"></script>
+    <script src="~/js/wow.min.js"></script>
+    <script>
+        wow = new WOW({}).init();
+    </script>
+
+    <!-- Custom scripts for this template -->
+    <script src="~/js/Custom.js"></script>
+
+    @RenderSection("scripts", required: false)
 </body>
 </html>

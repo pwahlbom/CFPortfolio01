@@ -1,0 +1,273 @@
+﻿@*<h2>@ViewBag.Title</h2>
+    <h3>@ViewBag.Message</h3>
+    <hr />*@
+
+<br />
+<p>JavaScript exercises :</p>
+
+<!-- Trigger the modal with a button -->
+<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#mdlHTMLExercises">HTML</button><br />
+<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#mdlCSSExercises">CSS</button><br />
+<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#mdlJavaScriptExercises">JavaScript</button>
+
+<!-- HTML Modal -->
+<div id="mdlHTMLExercises" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">HTML Exercises</h4>
+            </div>
+
+            <div class="container">
+                <h2>Dynamic Tabs</h2>
+                <p>To make the tabs toggleable, add the data-toggle="tab" attribute to each link. Then add a .tab-pane class with a unique ID for every tab and wrap them inside a div element with class .tab-content.</p>
+
+                <ul class="nav nav-tabs">
+                    <li class="active"><a data-toggle="tab" href="#HTMLexercise1">Exercise 1</a></li>
+                    <li><a data-toggle="tab" href="#HTMLexercise2">Exercise 2</a></li>
+                    <li><a data-toggle="tab" href="#HTMLexercise3">Exercise 3</a></li>
+                    <li><a data-toggle="tab" href="#HTMLexercise4">Exercise 4</a></li>
+                </ul>
+
+                <div class="tab-content">
+                    <div id="HTMLexercise1" class="tab-pane fade in active">
+                        <h3>Exercise 1</h3>
+                    </div>
+                    <div id="HTMLexercise2" class="tab-pane fade">
+                        <h3>Exercise 2</h3>
+                        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                    <div id="HTMLexercise3" class="tab-pane fade">
+                        <h3>Exercise 3</h3>
+                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+                    </div>
+                    <div id="HTMLexercise4" class="tab-pane fade">
+                        <h3>Exercise 4</h3>
+                        <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- CSS Modal -->
+<div id="mdlCSSExercises" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">JavaScript Exercises</h4>
+            </div>
+            <div class="modal-body">
+                <p>Some text in the modal.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- JavaScript Modal -->
+<div id="mdlJavaScriptExercises" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">JavaScript Exercises</h4>
+            </div>
+            <br />
+
+            <div class="container">
+
+                <ul class="nav nav-tabs">
+                    <li class="active"><a data-toggle="tab" href="#JSexercise1">Exercise 1</a></li>
+                    <li><a data-toggle="tab" href="#JSexercise2">Exercise 2</a></li>
+                    <li><a data-toggle="tab" href="#JSexercise3">Exercise 3</a></li>
+                    <li><a data-toggle="tab" href="#JSexercise4">Exercise 4</a></li>
+                </ul>
+
+                <div class="tab-content">
+                    <div id="JSexercise1" class="tab-pane fade in active">
+
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h5>Enter a number in each box below, and I will perform some math wizardy for you:</h5>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="row">
+                                    <div class="col-md-6">Number 1:</div>
+                                    <div class="col-md-6">
+                                        <input type="number" placeholder="Enter number 1" id="mathInput1_1" />
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        Number 2:
+                                    </div>
+                                    <div class="col-md-6">
+                                        <input type="number" placeholder="Enter number 2" id="mathInput1_2" />
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        Number 3:
+                                    </div>
+                                    <div class="col-md-6">
+                                        <input type="number" placeholder="Enter number 3" id="mathInput1_3" />
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        Number 4:
+                                    </div>
+                                    <div class="col-md-6">
+                                        <input type="number" placeholder="Enter number 4" id="mathInput1_4" />
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        Number 5:
+                                    </div>
+                                    <div class="col-md-6">
+                                        <input type="number" placeholder="Enter number 5" id="mathInput1_5" />
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <button id="btnMath1_1" class="btn btn-success">Calculate</button>
+                                    </div>
+                                    <div class="col-md-9">
+                                        <button id="btnMath1_2" class="btn btn-success">Clear</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <p id="mathOutput1">Math output</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="JSexercise2" class="tab-pane fade">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h5>Give me a number, and I will tell you the factorial of that number:</h5>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="row">
+                                    <div class="col-md-6">Number:</div>
+                                    <div class="col-md-6">
+                                        <input type="number" placeholder="Enter a number" id="mathInput2_1" />
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <button id="btnMath2_1" class="btn btn-success">Calculate</button>
+                                    </div>
+                                    <div class="col-md-9">
+                                        <button id="btnMath2_2" class="btn btn-success">Clear</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <p id="mathOutput2">Math output</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="JSexercise3" class="tab-pane fade">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h5>Give me any two numbers. I will exam each number between 1 and 100 and for each number that is a multiple of only YOUR first number I will report "Fizz". If a multiple of only YOUR second number, then "Buzz". If a multiple of both, then FizzBuzz. Otherwise I will just report the current number.</h5>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="row">
+                                    <div class="col-md-6">Number 1:</div>
+                                    <div class="col-md-6">
+                                        <input type="number" placeholder="Enter number 1" id="mathInput3_1" />
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        Number 2:
+                                    </div>
+                                    <div class="col-md-6">
+                                        <input type="number" placeholder="Enter number 2" id="mathInput3_2" />
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <button id="btnMath3_1" class="btn btn-success">Calculate</button>
+                                    </div>
+                                    <div class="col-md-9">
+                                        <button id="btnMath3_2" class="btn btn-success">Clear</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <p id="mathOutput3">Math output</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="JSexercise4" class="tab-pane fade">
+
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h5>Give me any string, and I will tell you if it is a palendrone:</h5>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="row">
+                                    <div class="col-md-6">String:</div>
+                                    <div class="col-md-6">
+                                        <input type="text" placeholder="Enter a string" id="mathInput4_1" />
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <button id="btnMath4_1" class="btn btn-success">Calculate</button>
+                                    </div>
+                                    <div class="col-md-9">
+                                        <button id="btnMath4_2" class="btn btn-success">Clear</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <p id="mathOutput4">Math output</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
