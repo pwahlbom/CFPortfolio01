@@ -2,13 +2,12 @@
     <h3>@ViewBag.Message</h3>
     <hr />*@
 
-<br />
-<p>JavaScript exercises :</p>
-
 <!-- Trigger the modal with a button -->
 <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#mdlHTMLExercises">HTML</button><br />
 <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#mdlCSSExercises">CSS</button><br />
 <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#mdlJavaScriptExercises">JavaScript</button>
+<br />
+<br />
 
 <!-- HTML Modal -->
 <div id="mdlHTMLExercises" class="modal fade" role="dialog">
@@ -93,10 +92,10 @@
             <div class="container">
 
                 <ul class="nav nav-tabs">
-                    <li class="active"><a data-toggle="tab" href="#JSexercise1">Exercise 1</a></li>
-                    <li><a data-toggle="tab" href="#JSexercise2">Exercise 2</a></li>
-                    <li><a data-toggle="tab" href="#JSexercise3">Exercise 3</a></li>
-                    <li><a data-toggle="tab" href="#JSexercise4">Exercise 4</a></li>
+                    <li class="active"><a data-toggle="tab" href="#JSexercise1">Arithmetic</a></li>
+                    <li><a data-toggle="tab" href="#JSexercise2">Factorial</a></li>
+                    <li><a data-toggle="tab" href="#JSexercise3">FizzBuzz</a></li>
+                    <li><a data-toggle="tab" href="#JSexercise4">Palendrone</a></li>
                 </ul>
 
                 <div class="tab-content">
@@ -104,7 +103,7 @@
 
                         <div class="row">
                             <div class="col-md-12">
-                                <h5>Enter a number in each box below, and I will perform some math wizardy for you:</h5>
+                                <h5>Enter a number in each box below, and I will perform some math wizardy for you: </h5>
                             </div>
                         </div>
 
@@ -161,6 +160,30 @@
                                 <p id="mathOutput1">Math output</p>
                             </div>
                         </div>
+
+                        <div class="row">
+                            <div class="col-md-12">
+                                <button id="btnShowCode1">Show Code</button>
+                            </div>
+                        </div>
+
+                        <div id="myCode1" style="display:none">
+                            <pre class="brush: js">
+// CODE 1
+$("#btnMath2_1").click(function () {
+    var input1 = Number($("#mathInput2_1").val());
+    var newnum = 1;
+
+    for (i = 1; i < input1; i++) {
+        newnum = newnum * (i+1);
+    }
+
+    var output = newnum;
+
+    $("#mathOutput2").html(output);
+});
+                                </pre>
+                        </div>
                     </div>
 
                     <div id="JSexercise2" class="tab-pane fade">
@@ -190,6 +213,32 @@
                             <div class="col-md-6">
                                 <p id="mathOutput2">Math output</p>
                             </div>
+
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <button id="btnShowCode2">Show Code</button>
+                                </div>
+                            </div>
+
+                            <div id="myCode2" style="display:none">
+                                <pre class="brush: js">
+// CODE 2
+$("#btnMath2_1").click(function () {
+    var input1 = Number($("#mathInput2_1").val());
+    var newnum = 1;
+
+    for (i = 1; i < input1; i++) {
+        newnum = newnum * (i+1);
+    }
+
+    var output = newnum;
+
+    $("#mathOutput2").html(output);
+});
+                                </pre>
+                            </div>
+
+
                         </div>
                     </div>
 
@@ -228,6 +277,31 @@
                             <div class="col-md-6">
                                 <p id="mathOutput3">Math output</p>
                             </div>
+
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <button id="btnShowCode3">Show Code</button>
+                                </div>
+                            </div>
+
+                            <div id="myCode3" style="display:none">
+                                <pre class="brush: js">
+// CODE 3
+$("#btnMath2_1").click(function () {
+    var input1 = Number($("#mathInput2_1").val());
+    var newnum = 1;
+
+    for (i = 1; i < input1; i++) {
+        newnum = newnum * (i+1);
+    }
+
+    var output = newnum;
+
+    $("#mathOutput2").html(output);
+});
+                                </pre>
+                            </div>
+
                         </div>
                     </div>
 
@@ -259,8 +333,32 @@
                             <div class="col-md-6">
                                 <p id="mathOutput4">Math output</p>
                             </div>
-                        </div>
 
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <button id="btnShowCode4">Show Code</button>
+                                </div>
+                            </div>
+
+                            <div id="myCode4" style="display:none">
+                                <pre class="brush: js">
+// CODE 4
+$("#btnMath2_1").click(function () {
+    var input1 = Number($("#mathInput2_1").val());
+    var newnum = 1;
+
+    for (i = 1; i < input1; i++) {
+        newnum = newnum * (i+1);
+    }
+
+    var output = newnum;
+
+    $("#mathOutput2").html(output);
+});
+                                </pre>
+                            </div>
+
+                        </div>
                     </div>
                 </div>
             </div>

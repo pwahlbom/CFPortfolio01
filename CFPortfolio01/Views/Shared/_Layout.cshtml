@@ -15,133 +15,153 @@
     <link href="~/css/animate.min.css" rel="stylesheet">
     <link href="~/css/style.css" rel="stylesheet" />
 
+    <!--Syntax Highlighter CSS-->
+    <link href="~/Content/CSS/SyntaxHighlighter/shCore.css" rel="stylesheet" />
+    <link href="~/Content/CSS/SyntaxHighlighter/shThemeDefault.css" rel="stylesheet" />
+
+    <!--My custom CSS-->
     <link href="~/css/main.css" rel="stylesheet" />
 </head>
 
 <body>
-
-    <!-- BEGIN HEADER ---------------------------------------------->
-    <header id="header">
-        <nav class="navbar navbar-default navbar-static-top" role="banner">
-            <div class="container">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <div class="navbar-brand">
-                        <h1>@Html.ActionLink("PCW3.0", "Start", "Home")</h1>
+    <!-- BEGIN TOP ---------------------------------------------->
+    <top>
+        <header id="header">
+            <nav class="navbar navbar-default navbar-static-top" role="banner">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <div class="navbar-brand">
+                            <h1>@Html.ActionLink("PCW3.0", "Index", "Home")</h1>
+                        </div>
+                    </div>
+                    <div class="navbar-collapse collapse">
+                        <div class="menu">
+                            <ul class="nav nav-tabs" role="tablist">
+                                <li role="presentation">@Html.ActionLink("Home", "Index", "Home")</li>
+                                <li role="presentation">@Html.ActionLink("About", "About", "Home")</li>
+                                <li role="presentation">@Html.ActionLink("Exercises", "Exercises", "Home")</li>
+                                <li role="presentation">@Html.ActionLink("Portfolio", "Portfolio", "Home")</li>
+                                <li role="presentation">@Html.ActionLink("Contact", "Contact", "Home")</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-                <div class="navbar-collapse collapse">
-                    <div class="menu">
-                        <ul class="nav nav-tabs" role="tablist">
-                            <li role="presentation">@Html.ActionLink("Home", "Start", "Home")</li>
-                            <li role="presentation">@Html.ActionLink("About", "About", "Home")</li>
-                            <li role="presentation">@Html.ActionLink("Exercises", "Exercises", "Home")</li>
-                            <li role="presentation">@Html.ActionLink("Portfolio", "Portfolio", "Home")</li>
-                            <li role="presentation">@Html.ActionLink("Contact", "Contact", "Home")</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <!--/.container-->
-        </nav>
-        <!--/nav-->
-    </header>
+                <!--/.container-->
+            </nav>
+            <!--/nav-->
+        </header>
+    </top>
+    <!-- END TOP ------------------------------------------------>
 
-    <div class="float">
-        <i class="my-float">@Html.ActionLink("Resume", "Resume", "Home")</i>
-    </div>
+    <nav class="float_container">
+        <a class="float_buttons" tooltip="Resume" href="@Url.Action("Resume", "Home")"></a>
+    </nav>
 
-    <!-- END HEADER ------------------------------------------------>
     <!-- BEGIN VIEW ------------------------------------------------>
     <div class="container body-content">
         @RenderBody()
     </div>
     <!-- END VIEW -------------------------------------------------->
-    <!-- BEGIN FOOTER ---------------------------------------------->
-    <footer>
-        <div class="container">
-            <div class="col-md-4 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
-                <h4>About Me</h4>
-                <p>Day is tellus ac cursus commodo, mauesris condime ntum nibh, ut fermentum mas justo sitters.</p>
-                <div class="contact-info">
-                    <ul>
-                        <li><i class="fa fa-home fa"></i>261 Hightower Lake Trail, Ball Ground, GA 30107 USA</li>
-                        <li><i class="fa fa-phone fa"></i>+1 770.841.4119</li>
-                        <li><i class="fa fa-envelope fa"></i>philip@wahlbom.net</li>
-                    </ul>
-                </div>
-            </div>
 
-            <div class="col-md-4 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
-                <div class="text-center">
-                    <h4>Photo Gallery</h4>
-                    <ul class="sidebar-gallery">
-                        <li><a href="#"><img src="~/img/gallery1.png" alt="" /></a></li>
-                        <li><a href="#"><img src="~/img/gallery2.png" alt="" /></a></li>
-                        <li><a href="#"><img src="~/img/gallery3.png" alt="" /></a></li>
-                        <li><a href="#"><img src="~/img/gallery4.png" alt="" /></a></li>
-                        <li><a href="#"><img src="~/img/gallery5.png" alt="" /></a></li>
-                        <li><a href="#"><img src="~/img/gallery6.png" alt="" /></a></li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="col-md-4 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="900ms">
-                <div class="">
-                    <h4>Newsletter Registration</h4>
-                    <p>Subscribe today to receive the latest Day news via email. You may unsubscribe from this service at any time</p>
-                    <div class="btn-gamp">
-                        <input type="email" class="form-control" id="exampleInputEmail3" placeholder="Enter Email">
-                    </div>
-                    <div class="btn-gamp">
-                        <a type="submit" class="btn btn-default">Subscribe</a>
+    <!-- BEGIN BOTTOM ---------------------------------------------->
+    <bottom>
+        <footer>
+            <div class="container">
+                <div class="col-md-4 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
+                    <h4>About Me</h4>
+                    <p>Day is tellus ac cursus commodo, mauesris condime ntum nibh, ut fermentum mas justo sitters.</p>
+                    <div class="contact-info">
+                        <ul>
+                            <li><i class="fa fa-home fa"></i>261 Hightower Lake Trail, Ball Ground, GA 30107 USA</li>
+                            <li><i class="fa fa-phone fa"></i>+1 770.841.4119</li>
+                            <li><i class="fa fa-envelope fa"></i>philip@wahlbom.net</li>
+                        </ul>
                     </div>
                 </div>
-            </div>
-        </div>
-    </footer>
 
-    <div class="sub-footer">
-        <div class="container">
-            <div class="social-icon">
+                <div class="col-md-4 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
+                    <div class="text-center">
+                        <h4>Photo Gallery</h4>
+                        <ul class="sidebar-gallery">
+                            <li><a href="#"><img src="~/img/gallery1.png" alt="" /></a></li>
+                            <li><a href="#"><img src="~/img/gallery2.png" alt="" /></a></li>
+                            <li><a href="#"><img src="~/img/gallery3.png" alt="" /></a></li>
+                            <li><a href="#"><img src="~/img/gallery4.png" alt="" /></a></li>
+                            <li><a href="#"><img src="~/img/gallery5.png" alt="" /></a></li>
+                            <li><a href="#"><img src="~/img/gallery6.png" alt="" /></a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-4 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="900ms">
+                    <div class="">
+                        <h4>Newsletter Registration</h4>
+                        <p>Subscribe today to receive the latest Day news via email. You may unsubscribe from this service at any time</p>
+                        <div class="btn-gamp">
+                            <input type="email" class="form-control" id="exampleInputEmail3" placeholder="Enter Email">
+                        </div>
+                        <div class="btn-gamp">
+                            <a type="submit" class="btn btn-default">Subscribe</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <div class="sub-footer">
+            <div class="container">
+                <div class="social-icon">
+                    <div class="col-md-6">
+                        <ul class="social-network">
+                            <li><a href="#" class="fb tool-tip" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#" class="twitter tool-tip" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#" class="gplus tool-tip" title="Google Plus"><i class="fa fa-google-plus"></i></a></li>
+                            <li><a href="#" class="linkedin tool-tip" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+                            <li><a href="#" class="ytube tool-tip" title="You Tube"><i class="fa fa-youtube-play"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+
                 <div class="col-md-6">
-                    <ul class="social-network">
-                        <li><a href="#" class="fb tool-tip" title="Facebook"><i class="fa fa-facebook"></i></a></li>
-                        <li><a href="#" class="twitter tool-tip" title="Twitter"><i class="fa fa-twitter"></i></a></li>
-                        <li><a href="#" class="gplus tool-tip" title="Google Plus"><i class="fa fa-google-plus"></i></a></li>
-                        <li><a href="#" class="linkedin tool-tip" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
-                        <li><a href="#" class="ytube tool-tip" title="You Tube"><i class="fa fa-youtube-play"></i></a></li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="col-md-6">
-                <div class="copyright">
-                    &copy; Philip C. Wahlbom. All Rights Reserved.
+                    <div class="copyright">
+                        &copy; Philip C. Wahlbom. All Rights Reserved.
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- END FOOTER ------------------------------------------------>
+    </bottom>
+    <!-- END BOTTOM ------------------------------------------------>
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="~/js/jquery.js"></script>
+    <!-- BEGIN CODE ------------------------------------------------>
+    <code>
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="~/js/jquery.js"></script>
 
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="~/js/bootstrap.min.js"></script>
-    <script src="~/js/wow.min.js"></script>
-    <script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="~/js/bootstrap.min.js"></script>
+        <script src="~/js/wow.min.js"></script>
+        <script>
         wow = new WOW({}).init();
-    </script>
+        </script>
 
-    <!-- Custom scripts for this template -->
-    <script src="~/js/Custom.js"></script>
+        <!--Highlighter JavaScript-->
+        <script src="~/Scripts/SyntaxHighlighter/shCore.js"></script>
+        <script src="~/Scripts/SyntaxHighlighter/shBrushJScript.js"></script>
+        <script>
+        SyntaxHighlighter.all();
+        </script>
 
-    @RenderSection("scripts", required: false)
+        <!--My custom JavaScript-->
+        <script src="~/js/Custom.js"></script>
+
+        @RenderSection("scripts", required: false)
+    </code>
+    <!-- END CODE -------------------------------------------------->
 </body>
 </html>

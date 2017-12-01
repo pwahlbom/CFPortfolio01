@@ -1,12 +1,10 @@
 ﻿$("#btnMath1_1").click(function () {
-    //Step 1: Use jQuery to gather the user input
+    //Use jQuery to gather the user input
     var input1 = Number($("#mathInput1_1").val());
     var input2 = Number($("#mathInput1_2").val());
     var input3 = Number($("#mathInput1_3").val());
     var input4 = Number($("#mathInput1_4").val());
     var input5 = Number($("#mathInput1_5").val());
-
-    //Step 2: Use JavaScript to work with the data
 
     //Calculate the Sum
     var sum = input1 + input2 + input3 + input4 + input5;
@@ -14,7 +12,7 @@
     //Calculate the Product
     var product = input1 * input2 * input3 * input4 * input5;
 
-    //Calculate the Mean (average)
+    //Calculate the Mean
     var mean = sum / 5;
 
     //Calculate the Min
@@ -23,18 +21,18 @@
     //Calculate the Max
     var max = Math.max(input1, input2, input3, input4, input5);
 
-    //Step 3: Use jQuery to output the results
-    var output = "The calculated sum is: " + sum + "<br>";
-    output += "The calculated product is: " + product + "<br>";
-    output += "The calculated mean is: " + mean + "<br>";
-    output += "The calculated min is: " + min + "<br>";
-    output += "The calculated max is: " + max;
+    //Use jQuery to output the results
+    var output = "Sum: " + sum + "<br>";
+    output += "Product: " + product + "<br>";
+    output += "Mean: " + mean + "<br>";
+    output += "Min: " + min + "<br>";
+    output += "Max: " + max;
 
     $("#mathOutput1").html(output);
 });
 
 $("#btnMath1_2").click(function () {
-    //Clear all the Input and Output
+    //Clear the controls
     $("#mathInput1_1").val("");
     $("#mathInput1_2").val("");
     $("#mathInput1_3").val("");
@@ -57,7 +55,7 @@ $("#btnMath2_1").click(function () {
 });
 
 $("#btnMath2_2").click(function () {
-    //Clear all the Input and Output
+    //Clear the controls
     $("#mathInput2_1").val("");
     $("#mathOutput2").text("");
 });
@@ -95,7 +93,7 @@ $("#btnMath3_1").click(function () {
 });
 
 $("#btnMath3_2").click(function () {
-    //Clear all the Input and Output
+    //Clear the controls
     $("#mathInput3_1").val("");
     $("#mathInput3_2").val("");
     $("#mathOutput3").text("");
@@ -118,7 +116,23 @@ $("#btnMath4_1").click(function () {
 });
 
 $("#btnMath4_2").click(function () {
-    //Clear all the Input and Output
+    //Clear the controls
     $("#mathInput4_1").val("");
     $("#mathOutput4").text("");
+});
+
+$("#btnShowCode1").click(function () {
+    $("#myCode1").toggle();
+});
+
+$("#btnShowCode2").click(function () {
+    $("#myCode2").toggle();
+});
+
+$("#btnShowCode3").click(function () {
+    $("#myCode3").toggle();
+});
+
+$("#btnShowCode4").click(function () {
+    $("#myCode4").toggle();
 });

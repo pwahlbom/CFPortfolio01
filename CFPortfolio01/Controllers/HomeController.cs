@@ -8,15 +8,10 @@ namespace CFPortfolio01.Controllers
 {
     public class HomeController : Controller
     {
-        public ActionResult Test()
+        public ActionResult Index()
         {
-            return View();
-        }
-
-        public ActionResult Start()
-        {
-            ViewBag.Title = "START";
-            ViewBag.Message = "Your Start page.";
+            ViewBag.Title = "INDEX";
+            ViewBag.Message = "Your Index page.";
             return View();
         }
 
